@@ -1,3 +1,7 @@
+== 0.10.3
+* Alloy syntax and themes to be loaded from custom directories
+* Created GH gem
+
 == 0.10.2
 * Fixed --no-lines command line option.
 * Updated PHP syntax, no longer stalling.
