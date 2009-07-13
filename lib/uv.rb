@@ -30,7 +30,7 @@ module Uv
          Dir.glob( File.join(dir, 'syntax', '*.syntax') ).collect do |f| 
             File.basename(f, '.syntax')
          end
-      end.flatten
+      end.flatten.uniq.sort
    end
    
    def Uv.themes
@@ -38,7 +38,7 @@ module Uv
          Dir.glob( File.join(dir, 'render', 'xhtml', 'files', 'css', '*.css') ).collect do |f| 
             File.basename(f, '.css')
          end
-      end.flatten
+      end.flatten.uniq.sort
    end
    
    def Uv.renderer(output, render_style)
